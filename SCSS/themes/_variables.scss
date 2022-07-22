@@ -4,6 +4,7 @@ $c1-bg-white: #fff;
 $c1-bg-WhiteSmoke: #F5F5F5; //xài cho bg item
 $c1-bg-gray80: #CCCCCC;
 $c1-bgframe-gray: #F8F8F8;
+$c2-bg-dark: #030303;
 //button
 $c1-bg-gray: #F8F8F8; //xài cho bg size,frame
 $c1-bg-linear: linear-gradient(180deg, #6181F3 0%, #7C97F5 99.48%);
@@ -11,7 +12,7 @@ $c2-bg-linear: linear-gradient(270deg, rgba(62, 32, 248, 0.9) 5.14%, #D017EE 89.
 $c1-bg-earthYellow :#E1B067; //buynow
 $c1-bg-gainsboro: 	#DEDDDC; //giatien
 
-//text
+//text color
 
 $c1-text-white: #FFF;
 $c1-text-whiteSmoke: #F7F7F7;
@@ -23,15 +24,14 @@ $c1-text-limeGreen: 	#1ED90E;
 $c1-text-neonSilver: 	#CBC9C9; //short descript ...
 $c1-text-red:#FC0303 ;
 
-//shadown
-$c1-text-shadown: 0px 4px 4px rgba(0, 0, 0, 0.25);
+//shadow
+$c1-text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 
 
 //border
 $c1-border: 1px solid #000000;
 
 //font
-
 
 //fontsize
 
@@ -42,10 +42,11 @@ $fs-4: 30px;
 $fs-5: 40px;
 
 //fontweight:
-$fw-1: 300;
-$fw-2: 400;
-$fw-3: 500;
-$fw-4: 600;
+$fw-1: 200;
+$fw-2: 300;
+$fw-3: 400;
+$fw-4: 500;
+$fw-5: 600;
 
 
 
