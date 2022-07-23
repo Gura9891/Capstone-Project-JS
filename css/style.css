@@ -224,7 +224,7 @@
 }
 .footer .container .top hr {
   width: 2px;
-  background-color: black;
+  background-color: #030303;
 }
 .footer .container .bottom {
   background-color: #CCCCCC;
@@ -254,5 +254,5 @@
 }
 .footer .container .bottom hr {
   width: 2px;
-  background-color: black;
+  background-color: #030303;
 }

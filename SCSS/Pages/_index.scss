@@ -230,9 +230,8 @@
                 }
             }
             hr{
-                // transform: translate(180degre);
                 width: 2px;
-                background-color: black;
+                background-color: $c2-bg-dark;
             }
         }
         .bottom{
@@ -262,7 +261,7 @@
             }
             hr{
                 width: 2px;
-                background-color: black;
+                background-color: $c2-bg-dark;
             }
         }
     }
