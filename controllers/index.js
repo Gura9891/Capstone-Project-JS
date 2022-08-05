@@ -26,7 +26,7 @@ function renderProductList(arrProduct, idBody) {
                     </div>
                     <div class="bottom">
                         <a href="#" class="btn-buy" type="button">Buy now</a>
-                        <a class="btn-price" type="button">${product.price}</a>
+                        <a class="btn-price" type="button">$${product.price}</a>
                     </div>
                 </div>
             </div>
