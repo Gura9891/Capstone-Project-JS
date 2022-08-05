@@ -29,7 +29,10 @@
     <!-- Font Google -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;600&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;600&display=swap"
+      rel="stylesheet"
+    />
 
     <!-- CSS -->
     <link rel="stylesheet" href="../css/style.css" />
@@ -39,11 +42,11 @@
       <div class="container">
         <div class="logo">
           <a href="#home">
-            <img src="../assets/img/image 3.png" alt="">
+            <img src="../assets/img/image 3.png" alt="" />
           </a>
         </div>
         <div class="register">
-          <img src="../assets/img/image 8.png" alt="">
+          <img src="../assets/img/image 8.png" alt="" />
           <span>(1)</span>
           <a href="#">Login</a>
           <a href="#">Register</a>
@@ -67,41 +70,38 @@
         <form action="">
           <div class="items">
             Email
-            <input type="text" required>
+            <input type="text" required />
             <span>(*)</span>
           </div>
           <div class="items">
             Name
-            <input type="text" required>
+            <input type="text" required />
             <span>(*)</span>
           </div>
           <div class="items">
             Password
-            <input type="password" required>
+            <input type="password" required />
             <span>(*)</span>
           </div>
           <div class="items">
             Phone
-            <input type="text" required>
+            <input type="text" required />
             <span>(*)</span>
           </div>
           <div class="items">
             Password confirm
-            <input type="password" required>
+            <input type="password" required />
             <span>(*)</span>
           </div>
           <div class="items border-0">
             Gender
             <div>
-              <input type="radio" name="gender" value="true" checked> Male
+              <input type="radio" name="gender" value="true" checked /> Male
             </div>
-            <div>
-              <input type="radio" name="gender" value="false"> Female
-            </div>
+            <div><input type="radio" name="gender" value="false" /> Female</div>
           </div>
           <button type="submit">Submit</button>
         </form>
-        
       </div>
     </section>
     <footer class="footer">
@@ -126,7 +126,7 @@
               </ul>
             </div>
           </div>
-          <hr>
+          <hr />
           <div class="col">
             <div class="item">
               <h5>ORDERS</h5>
@@ -135,9 +135,7 @@
                   <a href="#">Payment options</a>
                 </li>
                 <li>
-                  <a href="#">
-                    Shipping and delivery
-                  </a>
+                  <a href="#"> Shipping and delivery </a>
                 </li>
                 <li>
                   <a href="#">Returns</a>
@@ -145,13 +143,16 @@
               </ul>
             </div>
           </div>
-          <hr>
+          <hr />
           <div class="col">
             <div class="item">
               <h5>REGISTER</h5>
               <ul>
                 <li>
-                  <span>Create one account to manage everything you do with Nike, from your shopping preferences to your Nike+ activity.</span>
+                  <span
+                    >Create one account to manage everything you do with Nike,
+                    from your shopping preferences to your Nike+ activity.</span
+                  >
                 </li>
                 <li>
                   <a href="#">
@@ -168,7 +169,10 @@
               <h5>EMAIL SIGN UP</h5>
               <ul>
                 <li>
-                  <span>Be the first to know about new products and special offers.</span>
+                  <span
+                    >Be the first to know about new products and special
+                    offers.</span
+                  >
                 </li>
                 <li>
                   <a href="#">
@@ -178,7 +182,7 @@
               </ul>
             </div>
           </div>
-          <hr>
+          <hr />
           <div class="col">
             <div class="item">
               <h5>GIFT CARDS</h5>
@@ -194,7 +198,7 @@
               </ul>
             </div>
           </div>
-          <hr>
+          <hr />
           <div class="col">
             <div class="item">
               <h5>STORES NEAR YOU</h5>
@@ -213,8 +217,6 @@
         </div>
       </div>
     </footer>
-
-
 
     <!-- (Optional) Use CSS or JS implementation -->
     <script
@@ -236,7 +238,15 @@
       crossorigin="anonymous"
     ></script>
 
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.27.2/axios.min.js"
+      integrity="sha512-odNmoc1XJy5x1TMVMdC7EMs3IVdItLPlCeL5vSUPN2llYKMJ2eByTTAIiiuqLg+GdNr9hF6z81p27DArRFKT7A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
     <!-- JS -->
-    <script src="./controllers/index.js"></script>
+    <script src="../controllers/index.js"></script>
+    <script src="../controllers/register.js"></script>
   </body>
 </html>
