@@ -4,32 +4,48 @@
     .container{
         padding: 0 150px;
         form{
-            display: flex;
-            justify-content: space-between;
-            flex-wrap: wrap;
-            .items{
-                width: 45%;
-                border: none;
-                border-bottom: $c3-border;
-                display: flex;
-                flex-wrap: wrap;
-                justify-content: space-between;
-                align-items: center;
-                padding: 5px 0;
+            .row{
+                justify-content: space-around;
                 margin-bottom: 30px;
-                input{
-                    border: none;
-                    width: 64%;
-                }
-                span{
-                    color: $c1-text-red;
-                }
-                &:hover{
+                .col-5{
+                    display: flex;
+                    align-items: center;
+                    border-bottom: $c3-border;
+                    padding: 0;
                     input{
-                        border: $c1-border;
+                        border: none;
+                    }
+                    span{
+                        color: $c1-text-red;
+                    }
+                    p{
+                        margin: 0;
                     }
                 }
             }
+            // .items{
+            //     width: 45%;
+            //     border: none;
+            //     border-bottom: $c3-border;
+            //     display: flex;
+            //     flex-wrap: wrap;
+            //     justify-content: space-between;
+            //     align-items: center;
+            //     padding: 5px 0;
+            //     margin-bottom: 30px;
+            //     input{
+            //         border: none;
+            //         width: 64%;
+            //     }
+            //     span{
+            //         color: $c1-text-red;
+            //     }
+            //     &:hover{
+            //         input{
+            //             border: $c1-border;
+            //         }
+            //     }
+            // }
             button{
                 background-color: $c3-bg-purple;
                 width: 219px;

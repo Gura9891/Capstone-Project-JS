@@ -264,31 +264,24 @@
 .register .container {
   padding: 0 150px;
 }
-.register .container form {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-}
-.register .container form .items {
-  width: 45%;
-  border: none;
-  border-bottom: 3px solid #AE18E2;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
-  padding: 5px 0;
+.register .container form .row {
+  justify-content: space-around;
   margin-bottom: 30px;
 }
-.register .container form .items input {
-  border: none;
-  width: 64%;
+.register .container form .row .col-5 {
+  display: flex;
+  align-items: center;
+  border-bottom: 3px solid #AE18E2;
+  padding: 0;
 }
-.register .container form .items span {
+.register .container form .row .col-5 input {
+  border: none;
+}
+.register .container form .row .col-5 span {
   color: #FC0303;
 }
-.register .container form .items:hover input {
-  border: 1px solid #000000;
+.register .container form .row .col-5 p {
+  margin: 0;
 }
 .register .container form button {
   background-color: #AE18E2;
