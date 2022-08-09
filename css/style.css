@@ -268,19 +268,19 @@
   justify-content: space-around;
   margin-bottom: 30px;
 }
-.register .container form .row .col-5 {
+.register .container form .row .col-5 .item {
   display: flex;
   align-items: center;
   border-bottom: 3px solid #AE18E2;
-  padding: 0;
 }
-.register .container form .row .col-5 input {
+.register .container form .row .col-5 .item input {
   border: none;
+  margin: 0 7px;
 }
-.register .container form .row .col-5 span {
+.register .container form .row .col-5 .item span {
   color: #FC0303;
 }
-.register .container form .row .col-5 p {
+.register .container form .row .col-5 .item p {
   margin: 0;
 }
 .register .container form button {

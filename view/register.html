@@ -41,7 +41,7 @@
     <header class="header" id="home">
       <div class="container">
         <div class="logo">
-          <a href="#home">
+          <a href="../index.html">
             <img src="../assets/img/image 3.png" alt="" />
           </a>
         </div>
@@ -70,44 +70,93 @@
           <form id="registerForm" action="" class="d-block">
             <div class="row">
               <div class="col-5 form-group">
-                <label for="">Email</label>
-                <input type="text" id="email" class="form-control">
-                <span>(*)</span>
+                <div class="item">
+                  <label for="">Email</label>
+                  <input 
+                    type="text" 
+                    id="email" 
+                    class="form-control" 
+                    pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+                    required
+                    >
+                  <span>(*)</span>
+                </div>
+                <!-- Text validation -->
+                <span id="errEmail" class="text-danger"></span>
               </div>
               <div class="col-5 form-group">
-                <label for="">Name</label>
-                <input type="text" id="name" class="form-control">
-                <span>(*)</span>
+                <div class="item">
+                  <label for="">Name</label>
+                  <input
+                    type="text" 
+                    id="name" 
+                    class="form-control" 
+                    pattern="^[a-z0-9A-ZÀÁÂÃÈÉÊÌÍÒÓÔÕÙÚĂĐĨŨƠàáâãèéêìíòóôõùúăđĩũơƯĂẠẢẤẦẨẪẬẮẰẲẴẶẸẺẼỀỀỂẾưăạảấầẩẫậắằẳẵặẹẻẽềềểếỄỆỈỊỌỎỐỒỔỖỘỚỜỞỠỢỤỦỨỪễệỉịọỏốồổỗộớờởỡợụủứừỬỮỰỲỴÝỶỸửữựỳỵỷỹ\s\W|_]+$"
+                    required>
+                  <span>(*)</span>
+                </div>
+                <!-- Text validation -->
+                <span id="errName" class="text-danger"></span>
               </div>
             </div>
             <div class="row">
               <div class="col-5 form-group">
-                <label for="">Password</label>
-                <input type="text" id="password" class="form-control">
-                <span>(*)</span>
+                <div class="item">
+                  <label for="">Password</label>
+                  <input 
+                    type="text" 
+                    id="password" 
+                    class="form-control" 
+                    pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}"
+                    required>
+                  <span>(*)</span>
+                </div>
+                <!-- Text validation -->
+                <span id="errPassword" class="text-danger"></span>
               </div>
               <div class="col-5 form-group">
-                <label for="">Phone</label>
-                <input type="text" id="phone" class="form-control">
-                <span>(*)</span>
+                <div class="item">
+                  <label for="">Phone</label>
+                  <input 
+                    type="text" 
+                    id="phone" 
+                    class="form-control"
+                    pattern="[0-9,+,()]+$"
+                    required>
+                  <span>(*)</span>
+                </div>
+                <!-- Text validation -->
+                <span id="errPhone" class="text-danger"></span>
               </div>
             </div>
             <div class="row">
               <div class="col-5 form-group">
-                <label for="">Password confirm</label>
-                <input type="text" id="password-confirm" class="form-control">
-                <span>(*)</span>
+                <div class="item">
+                  <label for="">Password confirm</label>
+                  <input 
+                    type="text" 
+                    id="pass-confirm" 
+                    class="form-control"
+                    pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}"
+                    required>
+                  <span>(*)</span>
+                </div>
+                <!-- Text validation -->
+                <span id="errPassConfirm" class="text-danger"></span>
               </div>
               <!-- Gender -->
-              <div class="col-5 form-group border-0">
-                <label class="pe-5" for="">Gender</label>
-                <input type="radio" name="gender" value="true" checked>
-                <p class="ps-3 pe-5">Male</p>
-                <input type="radio" name="gender" value="false">
-                <p class="ps-3 pe-5">Female</p>
+              <div class="col-5 form-group">
+                <div class="item border-0 pt-4">
+                  <label class="pe-5" for="">Gender</label>
+                  <input type="radio" name="gender" value="true" checked>
+                  <p class="ps-3 pe-5">Male</p>
+
+                  <input type="radio" name="gender" value="false">
+                  <p class="ps-3 pe-5">Female</p>
+                </div>
               </div>
             </div>
-            <button>Submit</button>
+            <button id="btnSubmit">Submit</button>
           </form>
       </div>
     </section>
@@ -254,6 +303,7 @@
 
     <!-- JS -->
     <script src="../models/Users.js"></script>
+    <script src="../util/validation.js"></script>
     <script src="../controllers/register.js"></script>
   </body>
 </html>
